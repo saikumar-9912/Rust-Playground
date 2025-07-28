@@ -1,0 +1,18 @@
+fn main() {
+    let x = 10;
+    println!("Before pass_by_value, x = {}", x);
+    pass_by_value(x);
+    println!("After pass_by_value, x = {}", x);
+    let mut y = 20;
+    println!("\nBefore pass_by_reference, y = {}", y);
+    pass_by_reference(&mut y);
+    println!("After pass_by_reference, y = {}", y);
+}
+fn pass_by_value(mut num: i32) {
+    num += 5;
+    println!("Inside pass_by_value, num = {}", num);
+}
+fn pass_by_reference(num: &mut i32) {
+    *num += 5;
+    println!("Inside pass_by_reference, num = {}", num);
+}
