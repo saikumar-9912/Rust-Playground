@@ -1,0 +1,11 @@
+fn main() {
+    let my_tuple = (42, "Hello", 3.14, true);
+    let first = my_tuple.0;
+    let second = my_tuple.1;
+    let third = my_tuple.2;
+    let fourth = my_tuple.3;
+    println!("First element: {}", first);
+    println!("Second element: {}", second);
+    println!("Third element: {}", third);
+    println!("Fourth element: {}", fourth);
+}
